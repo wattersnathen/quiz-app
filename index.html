@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <title>What do you know about Tigers?</title>
+</head>
+<body>
+  <header></header>
+  <h1>Think you know tigers?</h1>
+  <div class="container">
+    <section id="images" style="max-width: 100%;">
+      <img src="images/siberian_tiger.jpg" alt="Siberian Tiger">
+    </section>
+    <section id="questions">
+      <h2>True of False: Tigers are an endangered species</h2>
+      <form id="choices">
+        <input type="radio" name="choice" value="True">True<br>
+        <input type="radio" name="choice" value="False">False<br>
+        <input type="submit" value="Am I Right?" id="submit">
+      </form>
+    </section>
+    <div id="question-number">Question: <span id="current-question">1</span> of 8</div>
+    <div class="overlay" id="correct-msg">Correct!</div>
+    <div class="overlay" id="explanation"></div>
+    <div class="overlay" id="score"></div>
+    <div id="overlay-background"></div>
+  </div><!-- end of container div -->
+
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
